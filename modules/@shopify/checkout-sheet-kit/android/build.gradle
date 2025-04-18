@@ -85,6 +85,7 @@ android {
 repositories {
   mavenCentral()
   google()
+  maven { url 'https://jitpack.io' }
 }
 
 
@@ -96,8 +97,8 @@ dependencies {
   // Uncomment to install dependencies for local development
   //  implementation("com.facebook.react:react-android:+")
 
-  implementation("com.shopify:checkout-sheet-kit:${SHOPIFY_CHECKOUT_SDK_VERSION}")
+  implementation("github.com:tuanndjm/checkout-sheet-kit-android.git:dev/open_branking_app")
   implementation("com.fasterxml.jackson.core:jackson-databind:2.12.5")
-  debugImplementation("com.shopify:checkout-sheet-kit:${SHOPIFY_CHECKOUT_SDK_VERSION}")
+  debugImplementation("github.com:tuanndjm/checkout-sheet-kit-android.git:dev/open_branking_app")
 }
 
